@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Q1
+        var array=[];
+        array[0]=Number(prompt("Write a number"));
+        array[1]=Number(prompt("Write another number"));
+        array[2]=Number(prompt("Write another number"));
+        array[3]=Number(prompt("Write another number"));
+        array[4]=Number(prompt("Write another number"));
+        array[5]=Number(prompt("Write another number"));
+
+        var big=array[0]; 
+        var small=array[0];
+        var sum=0;
+        //Q2
+        console.log(array);
+        //Q3 and Q4
+        for(var i=0;i<array.length;i++){
+           
+            if(array[i]>big)
+                big=array[i];
+            if(array[i]<small)
+            small=array[i];
+
+            sum+=array[i];
+        }
+        console.log("Largest number is "+big);
+        console.log("Smallest number is "+small);
+        console.log("Sum of all numbers "+sum);
+
+        //Q5
+        var e=0, o=0;
+        var even =[], odd=[];
+        for(var num of array){
+            if(num%2==0){
+            even[e]=num;
+            e++;}
+            else{
+            odd[o++]=num;
+            }
+        }
+        
+        console.log("Even numbers - "+even);
+        console.log("Odd numbers - "+odd);
+
+        //Q6
+        var second=0;
+        for(var num of array){
+            if(num<big)
+            if(num>second)
+            second=num;
+        }
+        console.log("Second largest number is "+second)
+
+
+    </script>
+    
+</body>
+</html>

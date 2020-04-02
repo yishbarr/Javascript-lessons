@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var matrix=[
+            [true, true],
+            [true, false],
+            [false, true],
+            [false, false]
+        ]
+
+        var and,or,xor;
+         for(var row of matrix){
+             if(row[0]&&row[1])
+             and=true;
+             else
+             and=false;
+             if(row[0]||row[1])
+             or=true;
+             else
+             or=false;
+             
+             if((row[0]&&!row[1])||(!row[0]&&row[1]))
+             xor=true;
+             else
+             xor=false;
+
+             var index = Number(matrix.indexOf(row))+1;
+             console.log("Row "+index);
+             if(and||or||xor){
+             if (and)
+             console.log("AND ");
+             if(or)
+             console.log("OR ");
+             if(xor)
+             console.log("XOR");
+            }
+            else
+            console.log("None")
+         }       
+    </script>
+</body>
+</html>
