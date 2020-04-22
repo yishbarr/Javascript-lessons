@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(prime(21));
+        console.log(prime(27));
+        console.log(prime(29));
+        function prime(x){
+            var check="Prime";
+            for(var i=x-1;i>Math.sqrt(x);i--){
+                if(x%i==0){
+                check="Not prime";
+                break;
+                }
+            }
+            return check;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function reversenum(x){
+           var str=String(x);
+           var spl=str.split("");
+           var rev=spl.reverse();
+           Number(x=rev.join(""));
+
+
+           return x;
+       }
+       console.log(reversenum(3456));
+    </script>
+</body>
+</html>
