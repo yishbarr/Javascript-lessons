@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sec=prompt("Write a time");
+        var counter=prompt("Write how many times you want to repeat");
+        for(var i=0; i<counter;i++){
+        setTimeout(function(){
+            console.log(Math.floor(Math.random()*10));
+        },i*counter*1000);
+        }
+    </script>
+</body>
+</html>

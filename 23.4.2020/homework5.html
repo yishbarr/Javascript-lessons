@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name=prompt("Name of song");
+        var lyrics=prompt("Paste lyrics");
+        var namelength=name.length;
+
+        var findname=function(name,lyrics,namelength){
+            var result=lyrics.slice(lyrics.indexOf(name),lyrics.indexOf(name)+namelength);
+            console.log(result.toLowerCase());
+        };
+        findname(name,lyrics,namelength);
+    </script>
+</body>
+</html>
